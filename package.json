@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-backend",
+  "name": "node-api",
   "version": "1.0.0",
   "description": "Node JS Backend API application which can be used with Angular, React or any other front end technologies.",
   "main": "server.js",
