@@ -1,14 +1,11 @@
-<<<<<<< HEAD
 /**
  * Name: Node JS API
  * Description: Node JS API Server for front end technologies.
  * Author: Ashish Yadav
  * Author URI: https://www.ashiish.me
  */
-=======
-// NODE API 
->>>>>>> c89c152dae965a7975c7cf719e38da7a275b7e95
 
+// NODE API 
 
 // includes express
 const express = require('express');

@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 /**
  * Configuration file for database
  */
-=======
+
 // Connection Config
->>>>>>> c89c152dae965a7975c7cf719e38da7a275b7e95
 
 // DEFINE CONSTANTS
 
