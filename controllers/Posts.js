@@ -1,3 +1,6 @@
+/**
+ * @class Posts
+ */
 
 class Posts {
 
@@ -7,6 +10,7 @@ class Posts {
 		this.db = db;
 	}
 
+	// returns posts
 	getPosts() {
 		let sql = "SELECT * FROM ay_posts";
 		this.db.query(sql, (err, result) => {
@@ -15,11 +19,11 @@ class Posts {
 		});
 	}
 
-	singleBlogPost() {
-		let param = this.req.body.param;
-		if(param != '') {
-			let sql = "SELECT * FROM ay_posts WHERE post_name = ?";
-			this.db.query(sql, param, (err, result) => {
+	// returns single post
+	singleBlogPost(id) {
+		if(id != '') {
+			let sql = "SELECT * FROM ay_posts WHERE post_id = ?";
+			this.db.query(sql, id, (err, result) => {
 				if(err) {
 					throw err;
 					this.res.status(400).send("Something Went Wrong!");
@@ -33,6 +37,7 @@ class Posts {
 		}
 	}
 
+	// adds post
 	addPost() {
 		let date = new Date();
 		let posted_date = date.getFullYear() + "-" + date.getMonth() + 

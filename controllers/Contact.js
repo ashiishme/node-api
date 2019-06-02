@@ -1,3 +1,6 @@
+/**
+ * @class Contact
+ */
 
 class Contact {
 
@@ -7,6 +10,7 @@ class Contact {
 		this.db = db;
 	}
 
+	// submit contact msg
 	sendMsg() {
 		this.db.query('INSERT INTO ay_contactmsgs SET ?', this.req.body, (err, result) => {
 			if(err) throw err;
