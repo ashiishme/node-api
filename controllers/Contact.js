@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 /**
  * @class Contact
  */
+=======
+// Contact class
+>>>>>>> c89c152dae965a7975c7cf719e38da7a275b7e95
 
 class Contact {
 
