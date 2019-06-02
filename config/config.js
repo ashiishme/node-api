@@ -40,5 +40,3 @@ module.exports = {
 	conn,
 	constants: constants
 };
-
-module.exports = conn;
